@@ -1,0 +1,23 @@
+/* ==========================================================================
+Intro Text
+========================================================================== */
+.main-intro-text { 
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background: $color-section-grey;
+  p { 
+    padding: 0 25px;
+    text-align: center;
+    margin: 0 auto;
+  }
+  h2.arrow {
+  padding-bottom: 30px; 
+  text-align: center;
+  }
+ @media (min-width: $brk-tablet) {
+    p {
+      max-width: 850px;
+      font-size: 20px;
+    }
+  }
+}

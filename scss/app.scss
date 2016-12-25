@@ -1,0 +1,15 @@
+// Base styles
+@import 'base/normalize';
+@import 'base/general';
+@import 'base/variables';
+@import 'base/typography';
+
+// Layout styles
+@import 'layout/header';
+@import 'layout/intro';
+@import 'layout/projects';
+@import 'layout/about';
+@import 'layout/footer';
+
+// Overrrides
+@import 'base/overrides';

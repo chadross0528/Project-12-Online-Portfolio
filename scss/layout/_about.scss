@@ -1,0 +1,50 @@
+main {
+  display: none;
+}
+
+.about {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background: $color-section-grey;
+  h2.arrow {
+  background: url('../images/h1-bg.png') no-repeat center bottom; 
+  padding-bottom: 30px; 
+  text-align: center;
+  }
+
+  p {
+    padding: 0 25px;
+    text-align: center;
+    margin: 0 auto;
+  }
+}
+
+.btn-resume-view{
+    display: block;
+    width: 100px;
+    margin: 35px auto 0 auto;
+    padding: 5px 15px 6px 15px;
+    border-radius: 50px;
+    transition: color .3s, background-color .3s;
+    background-color: $color-light-grey;
+    background-repeat: no-repeat;
+    background-position: 3px center;
+
+    &:hover {
+      background-color: $color-dark-grey;
+    }
+    a{
+      text-decoration: none;
+      color: $color-white;
+      font-size: 14px;
+      font-weight: 400;
+    }
+  }
+
+@media (min-width: $brk-tablet) {
+  p {
+    max-width: 850px;
+    font-size: 20px;
+  }
+}
+

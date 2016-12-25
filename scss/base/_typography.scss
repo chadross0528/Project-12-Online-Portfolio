@@ -1,0 +1,37 @@
+body {
+  font-family: $font-stack;
+}
+
+h1 {
+  font-size: 40px;
+  font-weight: 200;
+  line-height: 1;
+  color: $color-dark-grey;
+}
+
+h2 {
+  font-size: 40px;
+  font-weight: 200;
+  line-height: 1.2;
+  color: $color-dark-grey;
+}
+
+h3 {
+  font-size: 32px;
+  font-weight: 200;
+  line-height: 1.2;
+  color: $color-dark-grey;
+}
+
+p {
+  font-weight: 200;
+  font-size: 18px;
+  line-height: 1.5;
+  color: $color-black;
+}
+
+@media (min-width: $brk-tablet) {
+  p {
+    font-size: 20px;
+  }
+}

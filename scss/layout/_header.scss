@@ -1,0 +1,169 @@
+.main-header {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 75px 25px 50px;
+
+  @media (min-width: $brk-tablet) {
+    padding: 125px 25px 100px;
+  }
+} // -- .main-header --
+
+
+.main-nav {
+position: absolute;
+left: 0;
+top: 0;
+width: 100%;
+display: none;
+
+  ul {
+    list-style: none;
+    margin: 25px 0 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+
+    li {
+        padding: 0;
+      a {
+        text-decoration: none;
+        display: block;
+        padding: 15px;
+        text-transform: uppercase;
+        font-size: 16px;
+        font-weight: 200;
+        color: $color-black;
+      }
+    }
+  }
+  @media (min-width: $brk-phone-m){
+    ul li a {
+      font-size: 16px;
+    }
+  }
+  @media (min-width: $brk-tablet){
+    ul li a {
+      font-size: 18px;
+      padding: 15px 5px 10px;
+      margin: 0 20px;
+    }
+  }
+
+} // -- .main-nav --
+
+
+.main-logo {
+  width: 100%;
+  text-align: center;
+  svg {
+    width: 100%;
+    .logo{
+      fill: transparent;
+      stroke: $color-black;
+      stroke-width: 1;
+      stroke-dasharray: 1200;
+      stroke-dashoffset: 1200;
+      animation:
+        anim-logo-draw 2s ease-in forwards,
+        anim-logo-fill 1.25s 2s forwards;
+    }
+    .mid{
+      stroke: $color-bright-grey;
+      animation:
+        anim-mid-draw 2s ease-in forwards,
+        anim-mid-fill 1.25s 2s forwards;
+    }
+    animation:
+        anim-logo-scale-down 1s 2s ease-out forwards;
+  }
+
+  @media (min-width: $brk-phone-l) {
+    max-width: 350px;
+  }
+} // -- .main-logo --
+
+
+.main-heading {
+  flex: 0 100%;
+  margin: 0 0 25px 0;
+  color: $color-white;
+  font-family: $font-header;
+  font-size: 40px;
+  letter-spacing: 12px;
+  text-align: center;
+  transition: all .5s;
+  span {
+    color: $color-white;
+    &.visible {
+      color: $color-light-grey;
+          &:nth-child(n+7) {
+            color: $color-black;
+          }
+    }
+  }
+  @media (max-width: $brk-tablet) {
+    font-size: 23px;
+  }
+  @media (max-width: $brk-phone-l) {
+    font-size: 17px;
+  }
+} // -- .main-heading --
+
+
+.main-intro {
+  text-align: center;
+  flex: 0 100%;
+  margin: 0 0 25px;
+  display: none;
+  @media (min-width: $brk-tablet) {
+    max-width: 850px;
+    font-size: 20px;
+    margin-top: 25px;
+    margin-bottom: 50px;
+  }
+} // -- .main-intro --
+
+
+
+/****************************
+** Animation keyframes
+****************************/
+
+@keyframes anim-logo-draw {
+  100% {
+    stroke-dashoffset: 0
+  }
+}
+
+@keyframes anim-mid-draw {
+  100% {
+    stroke-dashoffset: 0
+  }
+}
+
+@keyframes anim-logo-fill{
+  100% {
+    fill: $color-black;
+  }
+}
+
+
+@keyframes anim-mid-fill{
+  100% {
+    fill: $color-bright-grey;
+  }
+}
+
+
+@keyframes anim-logo-scale-down {
+  40% {
+    width: 35%;
+  }
+  75% {
+    width: 42.5%;
+  }
+  100% {
+    width: 40%;
+  }
+}

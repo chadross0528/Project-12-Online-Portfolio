@@ -1,0 +1,29 @@
+// Font variables
+$font-stack          : 'Source Sans Pro', sans-serif;
+$font-header		 : 'Varela Round', sans-serif;
+$font-size-small     : 14px;
+$font-size-normal    : 16px;
+
+// Color variables
+$color-primary       : #ff2d34;
+$color-secondary     : #000000;
+
+$color-section-grey  : #f3f5f8;
+$color-black         : #222222;
+$color-white         : #ffffff;
+$color-bright-grey   : #eeeeee;
+$color-light-grey    : #b5b5b5;
+$color-grey          : #999999;
+$color-dark-grey     : #666666;
+
+
+// Media break points
+$brk-phone-s         :  320px;
+$brk-phone-m         :  375px;
+$brk-phone-l         :  425px;
+$brk-custom-2		 :  517px;
+$brk-custom			 :  637px;
+$brk-custom-3		 :  719px;
+$brk-tablet          :  769px;
+$brk-laptop          : 1050px;
+$brk-laptop-l        : 1440px;

@@ -89,7 +89,7 @@ display: none;
   margin: 0 0 25px 0;
   color: $color-white;
   font-family: $font-header;
-  font-size: 40px;
+  font-size: 17px;
   letter-spacing: 12px;
   text-align: center;
   transition: all .5s;
@@ -100,13 +100,17 @@ display: none;
           &:nth-child(n+7) {
             color: $color-black;
           }
+          &:nth-child(1) {
+            margin-left: 12px;
+          }
+
     }
   }
-  @media (max-width: $brk-tablet) {
+  @media (min-width: $brk-phone-l) {
     font-size: 23px;
   }
-  @media (max-width: $brk-phone-l) {
-    font-size: 17px;
+  @media (min-width: $brk-tablet) {
+    font-size: 40px;
   }
 } // -- .main-heading --
 

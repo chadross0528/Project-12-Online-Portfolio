@@ -463,7 +463,7 @@ p {
   margin: 0 0 25px 0;
   color: #ffffff;
   font-family: "Varela Round", sans-serif;
-  font-size: 40px;
+  font-size: 17px;
   letter-spacing: 12px;
   text-align: center;
   transition: all .5s; }
@@ -473,12 +473,14 @@ p {
       color: #b5b5b5; }
       .main-heading span.visible:nth-child(n+7) {
         color: #222222; }
-  @media (max-width: 769px) {
+      .main-heading span.visible:nth-child(1) {
+        margin-left: 12px; }
+  @media (min-width: 425px) {
     .main-heading {
       font-size: 23px; } }
-  @media (max-width: 425px) {
+  @media (min-width: 769px) {
     .main-heading {
-      font-size: 17px; } }
+      font-size: 40px; } }
 
 .main-intro {
   text-align: center;
@@ -568,47 +570,38 @@ Intro Text
     .project-list li.active a {
       color: #b5b5b5; }
   .project-list h2 {
-    font-size: 1.8em;
+    font-size: 1.5em;
     font-weight: 400; }
-    @media (max-width: 769px) {
+    @media (min-width: 769px) {
       .project-list h2 {
-        font-size: 1.5em; } }
+        font-size: 1.8em; } }
   .project-list a {
     text-align: center;
     max-width: 75px;
-    font-size: 1.3em;
+    font-size: 1.1em;
     text-decoration: none;
     color: #222222;
     font-weight: 100; }
     .project-list a:hover {
       color: #b5b5b5; }
-    @media (max-width: 769px) {
+    @media (min-width: 769px) {
       .project-list a {
-        font-size: 1.1em; } }
+        font-size: 1.3em; } }
 
 .treehouse, .individual {
-  margin: 0 5%;
-  width: 40%;
-  max-width: 425px;
-  min-width: 255px; }
-  @media (max-width: 637px) {
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center; }
+  @media (min-width: 637px) {
     .treehouse, .individual {
+      width: 40%;
+      min-width: 255px; } }
+  @media (min-width: 518px) {
+    .treehouse, .individual {
+      display: inline-block;
       margin: 0;
       width: 49.5%; } }
-  @media (max-width: 517px) {
-    .treehouse, .individual {
-      display: block;
-      width: 100%;
-      margin: 0 auto; } }
-
-.individual {
-  margin: 0 4.5%; }
-  @media (max-width: 637px) {
-    .individual {
-      margin: 0; } }
-  @media (max-width: 517px) {
-    .individual {
-      margin: 0 auto; } }
 
 .project-details {
   display: flex;
@@ -623,11 +616,12 @@ Intro Text
       max-width: 100%;
       height: auto; }
   .project-details h3 {
+    font-size: 1.4em;
     text-align: center;
     width: 95%; }
-    @media (max-width: 769px) {
+    @media (min-width: 769px) {
       .project-details h3 {
-        font-size: 1.4em; } }
+        font-size: 1.8em; } }
   .project-details p {
     width: 100%;
     flex: 0 100%; }
@@ -725,29 +719,35 @@ main {
         text-align: center;
         font-size: 1.5em; }
       .main-footer #contact-holder .col-4 a, .main-footer #contact-holder .col-4 p {
-        font-size: 1.1em; }
-        @media (max-width: 1050px) {
+        font-size: 1em; }
+        @media (min-width: 1050px) {
           .main-footer #contact-holder .col-4 a, .main-footer #contact-holder .col-4 p {
-            font-size: 1em; } }
-    .main-footer #contact-holder #nd-col {
-      margin: 0 40px; }
-      @media (max-width: 769px) {
-        .main-footer #contact-holder #nd-col {
-          margin: 0 15px; } }
-      @media (max-width: 719px) {
-        .main-footer #contact-holder #nd-col {
-          margin: 0 0 25px 0; } }
-    @media (max-width: 719px) {
-      .main-footer #contact-holder .col-4 {
-        width: 100%;
-        max-width: 425px;
-        margin-bottom: 25px; } }
-    @media (max-width: 517px) {
-      .main-footer #contact-holder .col-4 {
-        max-width: 325px; } }
-    @media (max-width: 425px) {
-      .main-footer #contact-holder .col-4 {
-        max-width: 250px; } }
+            font-size: 1.1em; } }
+    .main-footer #contact-holder .col-4 {
+      max-width: 250px;
+      margin: 0 auto 25px;
+      display: block; }
+      @media (min-width: 425px) {
+        .main-footer #contact-holder .col-4 {
+          width: 100%; } }
+      @media (min-width: 518px) {
+        .main-footer #contact-holder .col-4 {
+          max-width: 325px; } }
+      @media (min-width: 769px) {
+        .main-footer #contact-holder .col-4 {
+          display: inline-block;
+          max-width: 225px;
+          width: 100%; }
+          .main-footer #contact-holder .col-4:nth-child(2) {
+            margin: 20px 10px; } }
+      @media (min-width: 820px) {
+        .main-footer #contact-holder .col-4:nth-child(2) {
+          margin: 20px 20px; } }
+      @media (min-width: 1050px) {
+        .main-footer #contact-holder .col-4 {
+          max-width: 325px; }
+          .main-footer #contact-holder .col-4:nth-child(2) {
+            margin: 20px 30px; } }
   .main-footer .fa {
     display: block;
     line-height: 3;
